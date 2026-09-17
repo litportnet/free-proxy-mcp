@@ -1,0 +1,53 @@
+{
+  "name": "@litportnet/free-proxy-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "mcpName": "io.github.litportnet/free-proxy-mcp",
+  "description": "MCP server exposing Litport's verified free HTTP, SOCKS4 and SOCKS5 proxy snapshot.",
+  "bin": {
+    "litportnet-free-proxy-mcp": "./src/server.js"
+  },
+  "files": [
+    "src",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litportnet/free-proxy-mcp.git"
+  },
+  "homepage": "https://litport.net/free-proxy",
+  "bugs": {
+    "url": "https://github.com/litportnet/free-proxy-mcp/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "proxy",
+    "proxies",
+    "free-proxy",
+    "socks5",
+    "socks4",
+    "http-proxy",
+    "proxy-list",
+    "ai-agents"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@litportnet/free-proxy-sdk": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.6.5"
+  }
+}

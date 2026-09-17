@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-09-10T00:00:00.000Z",
+  "count": 8,
+  "totalCount": 8,
+  "truncated": false,
+  "maxAgeMin": 30,
+  "proxies": [
+    {"protocol":"http","host":"8.8.8.8","port":8080,"externalIp":"8.8.8.8","geoCountry":"US","geoRegion":"California","geoCity":"Mountain View","geoTimezone":"America/Los_Angeles","asn":"AS15169","asnOrgName":"Google LLC","https":true,"anonymity":"elite","responseTimeMs":120.4,"responseTimeMedianMs":110.5,"uptime24h":99.5,"uptime7d":98.2,"checks7d":72,"sourcesCount":3,"createdAt":"2026-08-01T00:00:00.000Z","pingAt":"2026-09-09T23:59:00.000Z"},
+    {"protocol":"socks5","host":"1.1.1.1","port":1080,"externalIp":null,"geoCountry":"AU","geoRegion":null,"geoCity":null,"geoTimezone":null,"asn":13335,"asnOrgName":"Cloudflare","https":null,"anonymity":"anonymous","responseTimeMs":300,"responseTimeMedianMs":280,"uptime24h":90,"uptime7d":55,"checks7d":10,"sourcesCount":1,"createdAt":"2026-08-02T00:00:00.000Z","pingAt":"2026-09-09T23:58:00.000Z"},
+    {"protocol":"socks4","host":"9.9.9.9","port":1081,"externalIp":"9.9.9.9","geoCountry":"DE","geoRegion":"Berlin","geoCity":"Berlin","geoTimezone":"Europe/Berlin","asn":"AS19281","asnOrgName":"Quad9","https":false,"anonymity":"transparent","responseTimeMs":null,"responseTimeMedianMs":null,"uptime24h":80,"uptime7d":70,"checks7d":60,"sourcesCount":2,"createdAt":"2026-08-03T00:00:00.000Z","pingAt":"2026-09-09T23:57:00.000Z"},
+    {"protocol":"http","host":"208.67.222.222","port":8081,"externalIp":"208.67.222.222","geoCountry":"GB","geoRegion":"London","geoCity":"London","geoTimezone":"Europe/London","asn":"AS36692","asnOrgName":"OpenDNS","https":true,"anonymity":"elite","responseTimeMs":200,"responseTimeMedianMs":190,"uptime24h":95,"uptime7d":92,"checks7d":80,"sourcesCount":4,"createdAt":"2026-08-04T00:00:00.000Z","pingAt":"2026-09-09T23:56:00.000Z"},
+    {"protocol":"socks5","host":"4.2.2.2","port":1082,"externalIp":"4.2.2.2","geoCountry":"US","geoRegion":"Georgia","geoCity":"Atlanta","geoTimezone":"America/New_York","asn":"AS7018","asnOrgName":"Level 3","https":true,"anonymity":"anonymous","responseTimeMs":150,"responseTimeMedianMs":140,"uptime24h":88,"uptime7d":40,"checks7d":45,"sourcesCount":1,"createdAt":"2026-08-05T00:00:00.000Z","pingAt":"2026-09-09T23:55:00.000Z"},
+    {"protocol":"socks4","host":"64.6.64.6","port":1083,"externalIp":"64.6.64.6","geoCountry":"FR","geoRegion":null,"geoCity":null,"geoTimezone":null,"asn":null,"asnOrgName":null,"https":null,"anonymity":"unknown","responseTimeMs":90,"responseTimeMedianMs":85,"uptime24h":60,"uptime7d":55,"checks7d":90,"sourcesCount":1,"createdAt":"2026-08-06T00:00:00.000Z","pingAt":"2026-09-09T23:54:00.000Z"},
+    {"protocol":"http","host":"209.244.0.3","port":8082,"externalIp":"209.244.0.3","geoCountry":"JP","geoRegion":"Tokyo","geoCity":"Tokyo","geoTimezone":"Asia/Tokyo","asn":"AS3356","asnOrgName":"Level 3 Parent","https":false,"anonymity":"transparent","responseTimeMs":500,"responseTimeMedianMs":480,"uptime24h":70,"uptime7d":65,"checks7d":55,"sourcesCount":2,"createdAt":"2026-08-07T00:00:00.000Z","pingAt":"2026-09-09T23:53:00.000Z"},
+    {"protocol":"socks5","host":"216.239.32.10","port":1084,"externalIp":"216.239.32.10","geoCountry":"CA","geoRegion":"Ontario","geoCity":"Toronto","geoTimezone":"America/Toronto","asn":"AS15169","asnOrgName":"Google LLC","https":true,"anonymity":"elite","responseTimeMs":250,"responseTimeMedianMs":240,"uptime24h":97,"uptime7d":96,"checks7d":65,"sourcesCount":3,"createdAt":"2026-08-08T00:00:00.000Z","pingAt":"2026-09-09T23:52:00.000Z"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.litportnet/free-proxy-mcp",
+  "description": "MCP server exposing Litport's verified free HTTP, SOCKS4 and SOCKS5 proxy snapshot.",
+  "repository": { "url": "https://github.com/litportnet/free-proxy-mcp", "source": "github" },
+  "version": "0.1.0",
+  "packages": [
+    { "registryType": "npm", "identifier": "@litportnet/free-proxy-mcp", "version": "0.1.0", "transport": { "type": "stdio" } }
+  ]
+}
