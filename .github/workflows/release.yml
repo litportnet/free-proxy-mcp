@@ -57,7 +57,22 @@ jobs:
             if (server.description.length > 100) problems.push("server.json description exceeds 100 characters")
             if (problems.length) { console.error(problems.join("\n")); process.exit(1) }
           '
+      # The first version had to be published with a token, because npm only exposes
+      # the trusted-publisher setting on a package that already exists. Re-publishing
+      # an existing version is a hard error, so skip it and go straight to the registry.
+      - name: Check whether this version is already on npm
+        id: npm_state
+        run: |
+          VERSION="$(node -p "require('./package.json').version")"
+          NAME="$(node -p "require('./package.json').name")"
+          if npm view "$NAME@$VERSION" version >/dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+            echo "$NAME@$VERSION is already on npm; skipping the npm publish step."
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Publish to npm
+        if: steps.npm_state.outputs.published == 'false'
         run: npm publish --access public --provenance
       - name: Install mcp-publisher
         run: curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
