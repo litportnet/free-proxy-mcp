@@ -65,7 +65,11 @@ jobs:
         run: |
           VERSION="$(node -p "require('./package.json').version")"
           NAME="$(node -p "require('./package.json').name")"
-          if npm view "$NAME@$VERSION" version >/dev/null 2>&1; then
+          # Ask the registry over plain HTTP. `npm view` reads the npmrc that
+          # setup-node writes, which demands NODE_AUTH_TOKEN and reports an
+          # unauthenticated lookup as "missing".
+          ENCODED="${NAME/\//%2f}"
+          if curl -fsS -o /dev/null "https://registry.npmjs.org/$ENCODED/$VERSION"; then
             echo "published=true" >> "$GITHUB_OUTPUT"
             echo "$NAME@$VERSION is already on npm; skipping the npm publish step."
           else
